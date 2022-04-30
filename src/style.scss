@@ -1,18 +1,74 @@
-body, html {
-    font-family: "Roboto", sans-serif;
-    font-size: 1.5em;
-    background: linear-gradient(to bottom, #87e0fd 0%,#53cbf1 40%,#05abe0 100%);
-    height: 100%;
-  }
-  
-.logo {
-    background-image: url('img/nono.jpg');
-    width: 100px;
-    height: 100px;
-    background-repeat: no-repeat;
-    background-size: contain;
+@import url("https://use.typekit.net/fen8xlb.css");
+
+.main {
+  font-family: neue-haas-unica, sans-serif;
+  background-attachment: fixed;
+  background-size: cover;
+  width: 100vw;
+  min-height: 100vh;
 }
-  
-.active {
-  color: pink;
+
+.main {
+  padding: 40px;
+}
+
+img {
+  width: 100%;
+}
+
+.page-title {
+  font-family: ivypresto-headline, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 3em;
+  text-align: center;
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 5em;
+  }
+  p {
+    font-family: neue-haas-unica, sans-serif;
+    font-size: 1.2em;
+    color: rgba(0, 0, 0, 0.67);
+    text-align: center;
+    width: 20%;
+  }
+}
+
+.project h2 {
+  font-family: neue-haas-unica, sans-serif;
+  font-weight: 400;
+  font-size: 1.3em;
+}
+
+.project {
+  margin: 40px 30px;
+  width: 60%;
+}
+
+.project-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-text {
+  margin-top: 30px;
+
+  p {
+    color: #888888;
+    margin: 0.25em 0;
+  }
+}
+
+.sticker {
+  width: 200px;
+  // z-index: -1;
 }
