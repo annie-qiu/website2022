@@ -25,15 +25,17 @@ const App = (props) => {
   console.log(color);
 
   return (
-    <div className="main" style={{ background: color }}>
+    <div style={{ background: color }}>
       <BrowserRouter>
         <Nav changeColor={changeColor} />
         {/* <NavLink to="/" onClick={() => changeColor('#EBF4E6')}>Home</NavLink> */}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/Work" element={<Work />} />
-        </Routes>
+        <div className="main">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/Work" element={<Work />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );

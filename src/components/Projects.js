@@ -31,7 +31,9 @@ const Projects = () => {
   const projects = ProjectItems.map((project) => {
     return (
       <div className="project">
-        {renderImage(project)}
+        <div className="project-img">
+          {renderImage(project)}
+        </div>
         <div className="project-text">
           <h2>{project.title}</h2>
           <p>{project.description}</p>

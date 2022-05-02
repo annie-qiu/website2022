@@ -5,8 +5,8 @@ class Sticker extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      x: 0,
-      y: 0,
+      x: this.props.x,
+      y: this.props.y,
     };
   }
 
@@ -25,11 +25,10 @@ class Sticker extends Component {
           x: this.state.x, y: this.state.y,
         }}
         onDrag={this.handleDrag}
-        handle=".dragger"
+        defaultPosition={{ x: this.props.x, y: this.props.y }}
       >
-        <div>
-          <div className="dragger">X</div>
-          <img src={this.props.img} alt="img" />
+        <div className="sticker">
+          <img src={this.props.img} draggable="false" alt="img" style={{ width: this.props.width }} />
         </div>
       </Draggable>
     );

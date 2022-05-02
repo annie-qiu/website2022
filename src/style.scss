@@ -6,14 +6,19 @@
   background-size: cover;
   width: 100vw;
   min-height: 100vh;
-}
-
-.main {
-  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 30px;
 }
 
 img {
   width: 100%;
+}
+
+nav {
+  position: absolute;
 }
 
 .page-title {
@@ -32,13 +37,19 @@ img {
 
   h1 {
     font-size: 5em;
+    z-index: 1;
   }
   p {
     font-family: neue-haas-unica, sans-serif;
     font-size: 1.2em;
     color: rgba(0, 0, 0, 0.67);
     text-align: center;
-    width: 20%;
+    width: 300px;
+    z-index: 1;
+  }
+
+  .home-text {
+    margin-top: auto;
   }
 }
 
@@ -48,19 +59,32 @@ img {
   font-size: 1.3em;
 }
 
-.project {
-  margin: 40px 30px;
-  width: 60%;
-}
-
 .project-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 1000px;
+  margin: 30px;
+}
+
+.project {
+  margin: 20px 20px;
+  width: 450px;
+  border: 1px solid black;
+
+  .project-img {
+    border-bottom: 1px solid black;
+  }
 }
 
 .project-text {
-  margin-top: 30px;
+  padding: 30px;
+
+  h2 {
+    margin-bottom: 0.5em;
+  }
 
   p {
     color: #888888;
@@ -69,6 +93,51 @@ img {
 }
 
 .sticker {
-  width: 200px;
-  // z-index: -1;
+  cursor: move;
+  position: absolute;
 }
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .page-title {
+    text-align: left;
+  }
+
+  .extra {
+    display: flex;
+  }
+
+  h2 {
+    font-size: 1em;
+    color: #0030DA;
+  }
+
+  h3 {
+    font-size: 1em;
+  }
+}
+
+.intro {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+  img {
+    width: 100%;
+  }
+}
+
+.intro-text {
+  padding-right: 100px;
+  width: 550px;
+}
+
+.coursework {
+  display: flex;
+  .cs {
+    padding: 0 60px 0;
+  }
+}
+
