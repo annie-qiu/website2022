@@ -1,10 +1,13 @@
 /* eslint-disable react/function-component-definition */
+// import React, { useState } from 'react';
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import ProjectItems from './ProjectItems';
+import './Work.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
-const Projects = () => {
+const Projects = (props) => {
+  // const [projects, setProjects] = useState([]);
+
   const renderImage = (proj) => {
     if (proj.carousel) {
       const carousel = proj.carousel.map((img) => {
@@ -22,13 +25,14 @@ const Projects = () => {
   const renderLink = (proj) => {
     if (proj.link) {
       return (
-        <a href={proj.link}>Try it out!</a>
+        <a href={proj.link}><i className="las la-external-link-alt" /> </a>
       );
     }
     return null;
   };
 
-  const projects = ProjectItems.map((project) => {
+  const { projects } = props;
+  const currentProjects = projects.map((project) => {
     return (
       <div className="project">
         <div className="project-img">
@@ -43,10 +47,9 @@ const Projects = () => {
       </div>
     );
   });
-
   return (
     <div className="project-container">
-      {projects}
+      {currentProjects}
     </div>
   );
 };

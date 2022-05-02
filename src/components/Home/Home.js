@@ -1,11 +1,12 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
-import aura from '../img/home/aura.svg';
-import star from '../img/home/greenstar2.svg';
-import orange from '../img/home/orange.png';
-import swirl from '../img/home/swirl.png';
-import yellowFlower from '../img/home/yellowflower.svg';
+import aura from '../../img/home/aura.svg';
+import star from '../../img/home/greenstar2.svg';
+import orange from '../../img/home/orange.png';
+import swirl from '../../img/home/swirl.png';
+import yellowFlower from '../../img/home/yellowflower.svg';
 import Sticker from './Sticker';
+import './Home.scss';
 
 const Home = (props) => {
   const stickerUrls = [

@@ -1,24 +1,14 @@
 /* eslint-disable react/function-component-definition */
 import React, { useState } from 'react';
 import {
-  BrowserRouter, Route, Routes, NavLink,
+  BrowserRouter, Route, Routes,
 } from 'react-router-dom';
-import Home from './Home';
-import Work from './Work';
-import About from './About';
+import Home from './Home/Home';
+import Work from './Work/Work';
+import About from './About/About';
+import Nav from './Menu/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-const Nav = (props) => {
-  return (
-    <nav>
-      <ul>
-        <li><NavLink to="/" onClick={props.changeColor('#EBF4E6')}>Home</NavLink></li>
-        <li><NavLink to="/work" onClick={props.changeColor('#F9F9F9')}>Work</NavLink></li>
-        <li><NavLink to="/about">About</NavLink></li>
-      </ul>
-    </nav>
-  );
-};
 
 const App = (props) => {
   const [color, changeColor] = useState('EBF4E6');
@@ -27,8 +17,7 @@ const App = (props) => {
   return (
     <div style={{ background: color }}>
       <BrowserRouter>
-        <Nav changeColor={changeColor} />
-        {/* <NavLink to="/" onClick={() => changeColor('#EBF4E6')}>Home</NavLink> */}
+        <Nav />
         <div className="main">
           <Routes>
             <Route path="/" element={<Home />} />

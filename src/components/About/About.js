@@ -1,6 +1,7 @@
 /* eslint-disable react/function-component-definition */
 import React from 'react';
-import profpic from '../img/profpic.png';
+import profpic from '../../img/profpic.png';
+import './About.scss';
 
 const About = () => {
   return (
@@ -30,32 +31,6 @@ const About = () => {
         </div>
         <div className="intro-img">
           <img src={profpic} alt="/" />
-        </div>
-      </div>
-      <div className="coursework-container">
-        <h2>Coursework</h2>
-        <div className="coursework">
-          <div className="cs">
-            <h3>Computer Science</h3>
-            <p>* denotes a Citation for Academic Excellence</p>
-            <ul>
-              <li>Intro to Programming and Computation (Python)*</li>
-              <li>Object-Oriented Programming (Java)</li>
-              <li>Discrete Math for CS</li>
-              <li>Algorithms</li>
-              <li>Machine Learning</li>
-              <li>Functions of One and Several Variables</li>
-            </ul>
-          </div>
-          <div className="art">
-            <h3>Design, Digital Art, and Studio Art</h3>
-            <ul>
-              <li>Design Thinking</li>
-              <li>Drawing 1*</li>
-              <li>Painting 1*</li>
-              <li>3D Digital Modeling*</li>
-            </ul>
-          </div>
         </div>
       </div>
     </div>
