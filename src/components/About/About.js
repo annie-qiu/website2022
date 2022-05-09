@@ -19,7 +19,6 @@ const About = () => {
           </p>
           <h2>Currently</h2>
           <p><b>Reading: </b><i>Beautiful World, Where Are You</i> by Sally Rooney</p>
-          <p><b>Listening to:</b></p>
           <h2>Experience</h2>
           <ul>
             <li>Product Designer @ DALI Lab</li>

@@ -1,5 +1,5 @@
 /* eslint-disable react/function-component-definition */
-import React, { useState } from 'react';
+import React from 'react';
 import {
   BrowserRouter, Route, Routes,
 } from 'react-router-dom';
@@ -9,13 +9,9 @@ import About from './About/About';
 import Nav from './Menu/Nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 const App = (props) => {
-  const [color, changeColor] = useState('EBF4E6');
-  console.log(color);
-
   return (
-    <div style={{ background: color }}>
+    <div>
       <BrowserRouter>
         <Nav />
         <div className="main">
