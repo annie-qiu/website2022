@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Draggable from 'react-draggable';
+import './Home.scss';
 
 class Sticker extends Component {
   constructor(props) {
