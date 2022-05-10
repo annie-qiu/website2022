@@ -1,13 +1,5 @@
-# Title
+# Personal Website
 
-*description*
+[deployed url](http://https://annieqiu.netlify.app/)
 
-[deployed url](http://url-if-deployed-here)
-
-## What Worked Well
-
-## What Didn't
-
-## Extra Credit
-
-## Screenshots
+I made this personal website with React. You can drag the items on the front page and see select projects filtered by category.
