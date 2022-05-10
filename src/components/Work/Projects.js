@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/function-component-definition */
 // import React, { useState } from 'react';
 import React from 'react';
@@ -6,8 +7,6 @@ import './Work.scss';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 
 const Projects = (props) => {
-  // const [projects, setProjects] = useState([]);
-
   const renderImage = (proj) => {
     if (proj.carousel) {
       const carousel = proj.carousel.map((img) => {
@@ -25,7 +24,16 @@ const Projects = (props) => {
   const renderLink = (proj) => {
     if (proj.link) {
       return (
-        <a href={proj.link}><i className="las la-external-link-alt" /> </a>
+        <a href={proj.link}><i className="las la-external-link-alt" /></a>
+      );
+    }
+    return null;
+  };
+
+  const renderGithub = (proj) => {
+    if (proj.github) {
+      return (
+        <a href={proj.github}><i className="lab la-github" /></a>
       );
     }
     return null;
@@ -40,9 +48,9 @@ const Projects = (props) => {
         </div>
         <div className="project-text">
           <h2>{project.title}</h2>
-          <p>{project.description}</p>
-          <p>{project.tags}</p>
-          {renderLink(project)}
+          <p className="description">{project.description}</p>
+          <p className="tags">{project.tags}</p>
+          {renderLink(project)} {renderGithub(project)}
         </div>
       </div>
     );

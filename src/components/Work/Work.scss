@@ -5,19 +5,17 @@
   }
   
   .project-container {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
+    column-count: 2;
     justify-content: center;
-    width: 1000px;
+    max-width: 1000px;
     margin: 20px;
   }
   
   .project {
-    margin: 20px 20px;
+    margin: 0 20px 50px;
     width: 450px;
     border: 1px solid black;
+    break-inside: avoid;
   
     .project-img {
       border-bottom: 1px solid black;
@@ -32,8 +30,13 @@
     }
   
     p {
-      color: #888888;
       margin: 0.25em 0;
+    }
+    .description {
+      color:#727478;
+    }
+    .tags {
+      color: #aaaaaf;
     }
   }
 
@@ -48,6 +51,7 @@ label {
     border: 1px solid black;
     padding: 8px 12px;
   }
+  
 }
 
 .selected {
@@ -62,7 +66,41 @@ label {
   justify-content: center;
 }
 
-.las {
+.las, .lab {
   font-size: 1.5em;
   color: #888888;
+  transition: 0.1s all ease;
+
+}
+.las:hover, .lab:hover {
+  color: black;
+}
+
+@media only screen and (max-width: 1000px) {
+  .project {
+    width: 100%;
+
+    .project-text {
+      padding: 30px;
+    
+      h2 {
+        margin-bottom: 0.5em;
+        font-size: 1.1em;
+      }
+    
+      p {
+        font-size: 0.9em;
+        margin: 0.25em 0;
+      }
+
+      
+    }
+  
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .project-container {
+    column-count: 1;
+  }
 }
