@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/control-has-associated-label */
 /* eslint-disable react/function-component-definition */
 import React from 'react';
 import profpic from '../../img/profpic.png';
@@ -27,6 +28,11 @@ const About = () => {
             <li>Design Consultant @ Design Corps</li>
             <li>UI/UX Designer @ Vitalize</li>
           </ul>
+          <div className="links">
+            <a href="https://www.linkedin.com/in/annierqiu/"><i className="lab la-linkedin-in" /></a>
+            <a href="https://github.com/annie-qiu/"><i className="lab la-github" /></a>
+            <a href="https://www.instagram.com/anniesartdiary/"><i className="lab la-instagram" /></a>
+          </div>
         </div>
         <div className="intro-img">
           <img src={profpic} alt="/" />

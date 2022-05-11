@@ -6,38 +6,39 @@ import orange from '../../img/home/orange.png';
 import swirl from '../../img/home/swirl.png';
 import yellowFlower from '../../img/home/yellowflower.svg';
 import Sticker from './Sticker';
+import Weather from './Weather';
 import './Home.scss';
 
 const Home = (props) => {
   const stickerUrls = [
     {
       img: aura,
-      x: 400,
-      y: -80,
+      x: 900,
+      y: -170,
       width: 190,
     },
     {
       img: star,
-      x: -370,
-      y: 170,
+      x: 327,
+      y: 173,
       width: 120,
     },
     {
       img: orange,
-      x: 480,
-      y: 200,
+      x: 1039,
+      y: 100,
       width: 180,
     },
     {
       img: swirl,
-      x: -430,
-      y: -144,
+      x: 309,
+      y: -198,
       width: 130,
     },
     {
       img: yellowFlower,
-      x: -250,
-      y: 0,
+      x: 218,
+      y: -59,
       width: 90,
     },
   ];
@@ -52,6 +53,7 @@ const Home = (props) => {
         <h1 className="page-title">Annie Qiu</h1>
         <p>designer, developer, and artist @ Dartmouth College</p>
       </div>
+      <Weather />
       {stickers}
     </div>
   );
