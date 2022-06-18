@@ -1,29 +1,36 @@
 @import url("https://use.typekit.net/fen8xlb.css");
 
-.main {
-  font-family: neue-haas-unica, sans-serif;
-  background-attachment: fixed;
-  background-size: cover;
-  width: 100vw;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+:root {
+  --gray: rgba(28, 45, 71, 0.77);
 }
 
-img {
-  width: 100%;
-}
 
-nav {
-  position: absolute;
-}
+// .main {
+//   font-family: neue-haas-unica, sans-serif;
+//   background-attachment: fixed;
+//   background-size: cover;
+//   width: 100vw;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   padding: 40px;
+//   margin-top: 20px;
+// }
 
-.page-title {
-  font-family: ivypresto-headline, serif;
-  font-weight: 100;
-  font-style: normal;
-  font-size: 3em;
-  text-align: center;
-}
+// img {
+//   width: 100%;
+// }
+
+// nav {
+//   position: absolute;
+// }
+
+// .page-title {
+//   font-family: ivypresto-headline, serif;
+//   font-weight: 100;
+//   font-style: normal;
+//   font-size: 3em;
+//   text-align: center;
+// }

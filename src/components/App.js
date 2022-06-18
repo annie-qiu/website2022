@@ -3,10 +3,10 @@ import React from 'react';
 import {
   BrowserRouter, Route, Routes,
 } from 'react-router-dom';
-import Home from './Home/Home';
-import Work from './Work/Work';
-import About from './About/About';
-import Nav from './Menu/Nav';
+import Home from './home/home';
+// import Work from './work/work';
+// import About from '../old/home/about/about';
+import Nav from './nav/nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
@@ -14,13 +14,11 @@ const App = (props) => {
     <div>
       <BrowserRouter>
         <Nav />
-        <div className="main">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/Work" element={<Work />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <Route path="/about" element={<About />} />
+            <Route path="/work" element={<Work />} /> */}
+        </Routes>
       </BrowserRouter>
     </div>
   );
