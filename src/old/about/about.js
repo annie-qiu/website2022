@@ -4,7 +4,7 @@ import React from 'react';
 import profpic from '../../img/profpic.png';
 import './About.scss';
 
-const About = () => {
+const Aboutold = () => {
   return (
     <div className="about">
       <h1 className="page-title">Hi! <span>&#127793;</span></h1>
@@ -42,4 +42,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Aboutold;

@@ -44,16 +44,11 @@
 //     }
 //   }
 
-.home {
-  width: 100%;
-  min-height: 100%;
-  position: fixed;
-}
-
 .sticker {
   cursor: move;
   position: absolute;
   z-index: 0;
+  float: left;
 }
 
 .content {

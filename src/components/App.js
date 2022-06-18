@@ -4,8 +4,8 @@ import {
   BrowserRouter, Route, Routes,
 } from 'react-router-dom';
 import Home from './home/home';
-// import Work from './work/work';
-// import About from '../old/home/about/about';
+import Work from './work/work';
+import About from './about/about';
 import Nav from './nav/nav';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -16,8 +16,8 @@ const App = (props) => {
         <Nav />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <Route path="/about" element={<About />} />
-            <Route path="/work" element={<Work />} /> */}
+          <Route path="/about" element={<About />} />
+          <Route path="/work" element={<Work />} />
         </Routes>
       </BrowserRouter>
     </div>

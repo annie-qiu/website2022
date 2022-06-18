@@ -4,6 +4,36 @@
   --gray: rgba(28, 45, 71, 0.77);
 }
 
+.page {
+  width: 100%;
+  position: absolute;
+}
+
+.general {
+  padding: 40px 80px;
+  margin-top: 50px;
+  margin-bottom: 40px;
+  height: 100vh;
+}
+
+.page-title {
+  font-family: ivypresto-headline, serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 60px;
+}
+
+@media (max-width: 1000px) {
+  .general {
+    padding: 40px 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .general {
+    padding: 10px;
+  }
+}
 
 // .main {
 //   font-family: neue-haas-unica, sans-serif;

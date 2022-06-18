@@ -1,5 +1,5 @@
 import React from 'react';
-import Background from '../../assets/images/bg.png';
+import Background from '../../assets/images/backgrounds/bg.png';
 import Weather from './weather';
 import Clock from './clock';
 import Sticker from './Sticker';
@@ -13,7 +13,7 @@ function Home() {
     );
   });
   return (
-    <div className="home">
+    <div className="page">
       <img id="home-bg" src={Background} alt={Background} />
       {stickers}
       <div className="content">
