@@ -3,3 +3,11 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  .filter {
+    cursor: pointer;
+  }
+
+  input {
+    visibility: hidden;
+  }
