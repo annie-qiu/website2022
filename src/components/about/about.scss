@@ -1,6 +1,7 @@
 #about {
     max-width: 800px;
     margin: auto;
+    padding: 20px;
 
     ul { 
         list-style: none; 
@@ -33,4 +34,10 @@ i {
 
 a.icon {
   text-decoration: none !important;
+}
+
+.button:hover {
+  color: #0D6A49;
+  border-color: #0D6A49;
+  border-width: 1px;
 }

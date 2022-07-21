@@ -27,6 +27,14 @@ nav {
     }
 }
 
+nav.mobile {
+    flex-direction: column;
+    li {
+        font-size: 22px;
+        padding-top: 16px;
+    }
+}
+
 @media (max-width: 1000px) {
   nav {
     padding: 40px 40px;

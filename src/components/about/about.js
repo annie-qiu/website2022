@@ -15,8 +15,8 @@ const About = () => {
       <div className="general">
         <div id="about">
           <div className="page-title">Hi! <span>&#127793;</span></div>
-          <Flex gridGap={10}>
-            <Flex gridGap={4} flexDir="column" w="65%">
+          <Flex gridGap={10} flexDir={['column', 'column', 'row']}>
+            <Flex gridGap={4} flexDir="column" w={['100%', '100%', '65%']}>
               <p>
                 I&apos;m Annie, a &apos;24 at Dartmouth College studying Computer Science and Studio Art.
               </p>
@@ -39,7 +39,7 @@ const About = () => {
                 </ul>
               </div>
             </Flex>
-            <Flex flexDir="column" w="45%">
+            <Flex flexDir="column" w={['100%', '100%', '45%']}>
               <Image objectFit="cover" src={Me} />
               <Flex flexDir="column" mt={4} alignItems="flex-end" gridGap={1}>
                 <p>Email me! ☞ <a href="mailto:annierqiu@gmail.com"><span>annierqiu@gmail.com</span></a></p>
