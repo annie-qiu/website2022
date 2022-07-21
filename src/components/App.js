@@ -8,7 +8,6 @@ import Work from './work/work';
 import About from './about/about';
 import Nav from './nav/nav';
 import Project from './work/project';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 const App = (props) => {
   return (
