@@ -1,0 +1,27 @@
+nav {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+        :hover {
+            color: #153CC6;
+        }
+    }
+}

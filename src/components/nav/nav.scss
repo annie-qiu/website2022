@@ -1,0 +1,42 @@
+nav {
+    background: transparent;
+    display: flex;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    padding: 40px 80px;
+
+    ul {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    li {
+        list-style-type: none;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--gray);
+        :hover {
+            color: black;
+        }
+    }
+}
+
+nav.mobile {
+    flex-direction: column;
+    li {
+        font-size: 22px;
+        padding-top: 16px;
+    }
+}
+
+@media (max-width: 1000px) {
+  nav {
+    padding: 40px 40px;
+  }
+}

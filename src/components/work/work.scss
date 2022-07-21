@@ -1,0 +1,40 @@
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .filter {
+    cursor: pointer;
+  }
+
+  .project-title {
+    font-family: ivypresto-headline, serif;
+    font-size: 2em;
+  }
+
+  input {
+    visibility: hidden;
+  }
+
+  .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+  }
+
+  .project-img {
+    margin: 14px;
+    img {
+      max-height: 800px;
+    }
+  }
+
+.project {
+  a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+}
+

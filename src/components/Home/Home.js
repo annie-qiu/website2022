@@ -1,62 +1,55 @@
-/* eslint-disable react/function-component-definition */
 import React from 'react';
-import aura from '../../img/home/aura.svg';
-import star from '../../img/home/greenstar2.svg';
-import orange from '../../img/home/orange.png';
-import swirl from '../../img/home/swirl.png';
-import yellowFlower from '../../img/home/yellowflower.svg';
+import { useMediaQuery } from 'react-responsive';
+import Background from '../../assets/images/backgrounds/bg.png';
+import MobileBg from '../../assets/images/backgrounds/bg-mobile.png';
+import Weather from './weather';
+import Clock from './clock';
 import Sticker from './Sticker';
-import Weather from './Weather';
-import './Home.scss';
+import './home.scss';
+import stickerUrls from './sticker_urls';
 
-const Home = (props) => {
-  const stickerUrls = [
-    {
-      img: aura,
-      x: 900,
-      y: -170,
-      width: 190,
-    },
-    {
-      img: star,
-      x: 327,
-      y: 173,
-      width: 120,
-    },
-    {
-      img: orange,
-      x: 1039,
-      y: 100,
-      width: 180,
-    },
-    {
-      img: swirl,
-      x: 309,
-      y: -198,
-      width: 130,
-    },
-    {
-      img: yellowFlower,
-      x: 218,
-      y: -59,
-      width: 90,
-    },
-  ];
+function Home() {
+  const isDesktop = useMediaQuery({ minWidth: 420 });
+
   const stickers = stickerUrls.map((sticker) => {
     return (
       <Sticker img={sticker.img} x={sticker.x} y={sticker.y} width={sticker.width} />
     );
   });
-  return (
-    <div className="home">
-      <div className="home-text">
-        <h1 className="page-title">Annie Qiu</h1>
-        <p>designer, developer, and artist @ Dartmouth College</p>
+  if (isDesktop) {
+    return (
+      <div className="page">
+        <img id="home-bg" src={Background} alt={Background} />
+        {stickers}
+        <div className="content">
+          <div className="heading">
+            <div className="title">Annie Qiu ✧ 邱烨</div>
+            <div className="description">
+              designer, developer, and artist @ Dartmouth College
+            </div>
+          </div>
+          <div className="extra">
+            <Weather />
+            <Clock />
+          </div>
+        </div>
       </div>
-      <Weather />
-      {stickers}
-    </div>
-  );
-};
+    );
+  } else {
+    return (
+      <div className="page">
+        <img id="home-bg" src={MobileBg} alt={MobileBg} />
+        <div className="content">
+          <div className="heading">
+            <div className="title">Annie Qiu</div>
+            <div className="description">
+              designer, developer, and artist @ Dartmouth College
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
+}
 
 export default Home;
