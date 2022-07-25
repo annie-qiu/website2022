@@ -1,0 +1,136 @@
+// .home {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: 100%;
+  
+//     h1 {
+//       font-size: 5em;
+//       z-index: 10;
+//     }
+//     p {
+//       font-family: neue-haas-unica, sans-serif;
+//       font-size: 1.2em;
+//       color: rgba(0, 0, 0, 0.67);
+//       text-align: center;
+//       width: 300px;
+//       z-index: 1;
+//     }
+  
+//     .home-text {
+//       display: flex;
+//       margin-top: auto;
+//       flex-direction: column;
+//       align-items: center;
+//     }
+//   }
+  
+//   .sticker {
+//     cursor: move;
+//     position: absolute;
+//     z-index: 0;
+//   }
+
+//   .weather {
+//     display: flex;
+//     flex-direction: column;
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     transform: translate(25px, 30px);
+//     p {
+//       line-height: 75%;
+//       text-align: left;
+//     }
+//   }
+
+.sticker {
+  cursor: move;
+  position: absolute;
+  z-index: 0;
+  float: left;
+}
+
+.content {
+  padding: 40px 80px;
+  margin-top: 50px;
+  padding-bottom: 100px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.heading {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  font-family: ivypresto-headline, serif;
+  font-size: 100px;
+  line-height: 120%;
+}
+
+.description {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.67);
+}
+
+#home-bg {
+  width: 100%;
+  // min-height: 100vh;
+  height: 100%;
+  position: fixed;
+  background-size: contain;
+  z-index: -100;
+}
+
+.extra {
+  display: flex;
+  flex-direction: row;
+  font-size: 18px;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+@media (max-width: 1100px) {
+  .title {
+    font-size: 90px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .content {
+    padding: 40px 40px;
+    padding-bottom: 90px;
+  }
+  .title {
+    font-size: 80px;
+  }
+  .description {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title {
+    font-size: 60px;
+  }
+  .description {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 390px) {
+  .title {
+    font-size: 60px;
+  }
+    .content {
+    padding: 30px;
+  }
+}
