@@ -25,7 +25,7 @@ const Work = () => {
       <div className="general">
         <Filter filter={(tag) => setCategory(tag)} />
         <div className="project-container">
-          {projects.map((project) => <ProjectCard proj={project} category={category} />)}
+          {projects.map((project) => (!project.inactive ? <ProjectCard proj={project} category={category} /> : ''))}
         </div>
       </div>
     </div>

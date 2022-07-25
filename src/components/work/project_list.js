@@ -14,7 +14,7 @@ import pcfa from '../../assets/images/thumbnails/pcfa.png';
 import pos from '../../assets/images/thumbnails/pos.png';
 import sobremesa from '../../assets/images/thumbnails/sobremesa.png';
 import svpp from '../../assets/images/thumbnails/svpp.png';
-// import timetable from '../../assets/images/thumbnails/timetable.png';
+import timetable from '../../assets/images/thumbnails/timetable.png';
 
 const ProjectList = [
   {
@@ -100,13 +100,14 @@ const ProjectList = [
     id: 'paintings',
     text: 'Paintings in oil and acrylic.',
   },
-  // {
-  //   title: 'Dartmouth Timetable',
-  //   description: 'UI/UX Design',
-  //   category: 'design',
-  //   img: timetable,
-  //   id: 'timetable',
-  // },
+  {
+    title: 'Dartmouth Timetable',
+    description: 'UI/UX Design',
+    category: 'design',
+    img: timetable,
+    id: 'timetable',
+    inactive: true,
+  },
   {
     title: 'Digital Art',
     description: '2020-2022',
