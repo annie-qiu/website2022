@@ -6,6 +6,7 @@ import {
 } from '@chakra-ui/react';
 import Beige from '../../assets/images/backgrounds/beige-bg.png';
 import Me from '../../assets/images/profpic.png';
+import Resume from '../../assets/resume/resume.pdf';
 import './about.scss';
 
 const About = () => {
@@ -58,7 +59,9 @@ const About = () => {
                     </Flex>
                   </a>
                 </HStack>
-                <div className="button">Resume</div>
+                <a href={Resume} target="_blank" rel="noopener noreferrer" className="icon">
+                  <div className="button">Resume</div>
+                </a>
               </Flex>
             </Flex>
           </Flex>
