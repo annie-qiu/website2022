@@ -26,8 +26,8 @@ const About = () => {
                 From painting to coding scripts and designing mobile applications, I love to use problem solving and visual analysis to create delightful, impactful, and humane creations.
               </p>
               <p>
-                I&apos;m from Shanghai, China (my favorite place in the world) but have also lived in upstate NY, Singapore, and Hanover, NH.
-                I&apos;m also a campus tour guide, <a href="https://www.goodreads.com/user/show/76045237-annie">a reader</a>, and a lover of fresh coconuts 🥥.
+                I&apos;m from Shanghai, China (my favorite place in the world) but have also lived in upstate NY, Singapore, and Hanover, NH, and I&apos;m currently studying abroad in Copenhagen.
+                I&apos;m also a campus tour guide and a lover of second-hand fashion and fresh coconuts 🥥.
               </p>
               <div>
                 <p className="section"> Experience</p>
@@ -66,6 +66,7 @@ const About = () => {
             </Flex>
           </Flex>
           <div>
+            <br />
             <p className="section">Coursework</p>
             <em>* denotes a Citation of Academic Excellence</em>
             <ul className="list" style={{ columnCount: 2 }}>
