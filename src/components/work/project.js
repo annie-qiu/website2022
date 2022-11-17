@@ -39,6 +39,9 @@ function Project(props) {
   const editorial = importAll(require.context('../../assets/images/projects/editorial', false, /\.(png|jpe?g|svg|gif)$/));
   const etch = importAll(require.context('../../assets/images/projects/etch', false, /\.(png|jpe?g|svg|gif)$/));
   const sculpture = importAll(require.context('../../assets/images/projects/sculpture', false, /\.(png|jpe?g|svg|gif)$/));
+  const vitalize = importAll(require.context('../../assets/images/projects/vitalize', false, /\.(png|jpe?g|svg|gif)$/));
+  const quiz = importAll(require.context('../../assets/images/projects/quiz', false, /\.(png|jpe?g|svg|gif)$/));
+  const aapihm = importAll(require.context('../../assets/images/projects/aapihm', false, /\.(png|jpe?g|svg|gif)$/));
 
   let images = [];
 
@@ -90,6 +93,15 @@ function Project(props) {
       break;
     case 'sculpture':
       images = sculpture;
+      break;
+    case 'vitalize':
+      images = vitalize;
+      break;
+    case 'quiz':
+      images = quiz;
+      break;
+    case 'aapihm':
+      images = aapihm;
       break;
     default:
       break;

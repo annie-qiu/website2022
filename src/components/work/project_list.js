@@ -15,6 +15,9 @@ import pos from '../../assets/images/thumbnails/pos.png';
 import sobremesa from '../../assets/images/thumbnails/sobremesa.png';
 import svpp from '../../assets/images/thumbnails/svpp.png';
 import timetable from '../../assets/images/thumbnails/timetable.png';
+import vitalize from '../../assets/images/thumbnails/vitalize.png';
+import quiz from '../../assets/images/thumbnails/quiz.png';
+import aapihm from '../../assets/images/thumbnails/aapihm.png';
 
 const ProjectList = [
   {
@@ -35,6 +38,14 @@ const ProjectList = [
     text: 'Digital models of the living room from the film [The Farewell](https://a24films.com/films/the-farewell) that I modeled, textured, and rendered in Maya',
   },
   {
+    title: 'Sexual Violence Prevention Project',
+    description: 'UI/UX Design',
+    category: 'design',
+    img: svpp,
+    id: 'svpp',
+    text: 'Dartmouth’s [Sexual Violence Prevention Project (SVPP)](https://students.dartmouth.edu/wellness-center/prevention-education/sexual-violence-prevention-project) aims to reduce sexual assault, relationship violence, stalking, and harassment on campus through a comprehensive four-year curriculum. The SVPP staff and Dartmouth IT worked with DALI Lab to design and deploy a full-stack web application for students to manage their progress with the curriculum and for administrators to maintain the curriculum. Our partners requested that the solution should be intuitive and motivate students to be more engaged in the curriculum.\n \n I worked as a UI/UX designer as well as a developer on the project. As a designer, I used UX Research methods, sketched solutions, created grayscales and hifi prototypes, and ideated a comprehensive design system to produce a MVP for the SVPP platform. As a developer, I worked on adding authentication for administrators, different permission levels for administrators, and implemented features such as allowing admins to assign curriculums to students and assign requirements to students. \n \n The project is currently being finished up by Dartmouth ITC and will soon be deployed for all future Dartmouth students with an incoming freshman class of 1,400+.',
+  },
+  {
     title: 'Drawings',
     description: '2018-2022',
     category: 'art',
@@ -52,14 +63,6 @@ const ProjectList = [
     text: 'A 3D digital animation of Astrobunny, a character I designed, modeled, rigged and textured. Astrobunny is an adventurous robot-astronaut-bunny hybrid on a mission to find the most tasty carrots across the galaxy.',
   },
   {
-    title: 'Bookshelf',
-    description: 'Full-Stack Web Development',
-    category: 'code',
-    img: bookshelf,
-    id: 'bookshelf',
-    text: 'Website to keep track of and log your book reviews. I created the front-end with React and Redux and created the back-end with MongoDB and Node/Express. Bookshelf supports account creation and authentication, the ability to search by book title, and create/edit/delete book reviews.',
-  },
-  {
     title: 'Presidential Commission on Financial Aid',
     description: 'UI/UX Design & Illustration',
     category: 'design',
@@ -69,28 +72,36 @@ const ProjectList = [
     text: 'I worked as a designer for DALI Lab in collaboration with the Presidential Commission on Financial Aid (PCFA) to create an *interactive storytelling website that illustrates how financial aid can impact a student’s life* to encourage Dartmouth alumni to donate to *support financial aid*. I created graphics and illustrations for this project.',
   },
   {
-    title: 'Parts of Speech Tagger',
-    description: 'Java',
+    title: 'Sobremesa',
+    description: 'UI/UX Design',
+    category: 'design',
+    img: sobremesa,
+    id: 'sobremesa',
+    text: 'Sobremesa was designed to help bridge the generational gap with multicultural families.\n \n[Read the Case Study ↗](https://medium.com/@annie.r.qiu.24/designing-an-experience-to-combat-the-generational-gap-a-case-study-9e0d4c97058d)',
+  },
+  {
+    title: 'Bookshelf',
+    description: 'Full-Stack Web Dev',
     category: 'code',
-    img: pos,
-    id: 'pos',
-    text: 'I built a Part of Speech tagger in *Java* that takes in a sequences of words and produces the corresponding sequence of parts of speech using a *hidden Markov model*. In the model, observations are words in a sentence, and states are the parts of speech tags. The POS tagger is trained on the Brown corpus and uses the *Viterbi algorithm* to find the best sequence of tags. When tested on a set of over 30,000 words, the POS tagger had a 96.4% accuracy rate. \n\n Contact me to see the GitHub repo for POS tagger.',
+    img: bookshelf,
+    id: 'bookshelf',
+    text: 'Website to keep track of and log your book reviews. I created the front-end with React and Redux and created the back-end with MongoDB and Node/Express. Bookshelf supports account creation and authentication, the ability to search by book title, and create/edit/delete book reviews.',
+  },
+  {
+    title: 'Vitalize',
+    description: 'UI/UX Design, Illustration, Graphic Design',
+    category: 'design',
+    img: vitalize,
+    id: 'vitalize',
+    text: 'Vitalize is the first mobile wellness app tailored for healthcare providers with mindfulness, meditation, journal modules, and personalized mental health support. At Vitalize, I was a UI/UX Designer and Graphic Designer. I built wireframes, interfaces, and interactive prototypes using Figma and analyze user data to determine the app design. I redesigned the logo, designed a character to represent the app, redesigned the interfaces for the Meditation and Journal modules, and ideated and designed an original system to represent the user’s progress in the app through gamification. I also created vector illustrations to accompany the app and created promotional posters.',
   },
   {
     title: 'Notes',
-    description: 'Full-Stack Web Development',
+    description: 'Full-Stack Web Dev',
     category: 'code',
     img: notes,
     id: 'notes',
     text: 'I used React and Firebase to create a Notes platform that is synchronous across different users. The website supports multiple boards, Google sign in to track the authors of notes, Markdown in notes, and the ability to create, drag and drop, edit and delete notes.\n\n [Try it out ↗](https://annie-qiu-notes.onrender.com/)',
-  },
-  {
-    title: 'Sexual Violence Prevention Project',
-    description: 'UI/UX Design',
-    category: 'design',
-    img: svpp,
-    id: 'svpp',
-    text: 'Coming soon...',
   },
   {
     title: 'Paintings',
@@ -107,6 +118,7 @@ const ProjectList = [
     img: timetable,
     id: 'timetable',
     inactive: true,
+    text: 'As a final project for a course on design run by the Digital Applied Learning and Innovation (DALI) Lab at Dartmouth, my team and I redesigned the Dartmouth Timetable. The Timetable is the platform all Dartmouth students use to browse and find information on courses, but the current interface is outdated and difficult to use. We redesigned the user interface and considered how to best display information to ensure students can quickly find information on the courses they want to elect, find new courses to take, and plan out all their courses considering the rest of their college career.',
   },
   {
     title: 'Digital Art',
@@ -115,14 +127,6 @@ const ProjectList = [
     img: digital,
     id: 'digital',
     text: 'Digital illustrations, animations, and studies',
-  },
-  {
-    title: 'Sobremesa',
-    description: 'UI/UX Design',
-    category: 'design',
-    img: sobremesa,
-    id: 'sobremesa',
-    text: 'Sobremesa was designed to help bridge the generational gap with multicultural families.\n \n[Read the Case Study ↗](https://medium.com/@annie.r.qiu.24/designing-an-experience-to-combat-the-generational-gap-a-case-study-9e0d4c97058d)',
   },
   {
     title: 'Editorial Illustrations',
@@ -134,7 +138,7 @@ const ProjectList = [
   },
   {
     title: 'Etch-a-Sketch',
-    description: 'Front-end Web Development',
+    description: 'Front-end Web Dev',
     category: 'code',
     img: etch,
     id: 'etch',
@@ -146,6 +150,31 @@ const ProjectList = [
     category: 'art',
     img: sculpture,
     id: 'sculpture',
+  },
+  {
+    title: 'What Font Are You?',
+    description: 'Web Dev',
+    category: 'code',
+    img: quiz,
+    id: 'quiz',
+    text: 'I used HTML/CSS and Javascript to create this simple website that has two personality quizzes. I created the designs as well.',
+    link: 'https://quiz-ij0z.onrender.com/',
+  },
+  {
+    title: 'Parts of Speech Tagger',
+    description: 'Java',
+    category: 'code',
+    img: pos,
+    id: 'pos',
+    text: 'I built a Part of Speech tagger in *Java* that takes in a sequences of words and produces the corresponding sequence of parts of speech using a *hidden Markov model*. In the model, observations are words in a sentence, and states are the parts of speech tags. The POS tagger is trained on the Brown corpus and uses the *Viterbi algorithm* to find the best sequence of tags. When tested on a set of over 30,000 words, the POS tagger had a 96.4% accuracy rate. \n\n Contact me to see the GitHub repo for POS tagger.',
+  },
+  {
+    title: 'Asian American Pacific Islander Heritange Month Branding',
+    description: 'Logo Design',
+    category: 'design',
+    img: aapihm,
+    id: 'aapihm',
+    text: 'Dartmouth’s Office of Pluralism and Leadership commissioned me to design a logo for [Asian American Pacific Islander Heritage Month (AAPIHM)](https://students.dartmouth.edu/opal/community-leadership/heritage-history-celebrations/asian-american-pacific-islander-heritage-month-1) 2021 and 2022. I used Figma to design a versatile, meaningful, and engaging logo for the themes Constellations and Elements.',
   },
 ];
 

@@ -5,7 +5,7 @@ import Background from '../../assets/images/backgrounds/bg.png';
 import MobileBg from '../../assets/images/backgrounds/bg-mobile.png';
 import Weather from './weather';
 import Clock from './clock';
-import Sticker from './Sticker';
+import Sticker from './sticker';
 import './home.scss';
 import stickerUrls from './sticker_urls';
 

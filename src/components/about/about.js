@@ -6,7 +6,7 @@ import {
 } from '@chakra-ui/react';
 import Beige from '../../assets/images/backgrounds/beige-bg.png';
 import Me from '../../assets/images/profpic.png';
-import Resume from '../../assets/resume/resume.pdf';
+import Resume from '../../assets/resume/resume2.pdf';
 import './about.scss';
 
 const About = () => {
