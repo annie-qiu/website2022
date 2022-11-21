@@ -77,15 +77,21 @@ const About = () => {
               <li>Algorithms</li>
               <li>Full-Stack Web Development*</li>
               <li>Machine Learning & Statistical Analysis</li>
-              <p>Design</p>
+              <li>Artificial Neural Networks</li>
+              <br />
+              <p>Design and Digital Art</p>
               <li>Design Thinking</li>
               <li>UI/UX Design</li>
-              <p>Digital and Studio Art</p>
               <li>3D Digital Modeling*</li>
+              <p>Studio Art</p>
               <li>Drawing I*</li>
               <li>Painting I*</li>
+              <li>Painting II</li>
+              <li>Furniture Design</li>
             </ul>
           </div>
+          <br />
+          <p>This website was coded with React and Chakra UI. <a href="https://github.com/annie-qiu/website2022">Check out the code here!</a></p>
         </div>
       </div>
     </div>

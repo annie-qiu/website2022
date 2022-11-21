@@ -32,7 +32,7 @@ const ProjectList = [
   {
     title: 'Digital Room',
     description: '3D Digital Modeling',
-    category: 'art',
+    category: 'design',
     img: room,
     id: 'room',
     text: 'Digital models of the living room from the film [The Farewell](https://a24films.com/films/the-farewell) that I modeled, textured, and rendered in Maya',
@@ -56,7 +56,7 @@ const ProjectList = [
   {
     title: 'Astrobunny',
     description: '3D Digital Animation',
-    category: 'art',
+    category: 'design',
     img: astrobunny,
     id: 'astrobunny',
     html: 'https://www.youtube.com/embed/pa0JvobwU2M',
@@ -129,12 +129,12 @@ const ProjectList = [
     text: 'Digital illustrations, animations, and studies',
   },
   {
-    title: 'Editorial Illustrations',
-    description: '2020-2021',
-    category: 'art',
+    title: 'Editorial Illustrations and Graphics',
+    description: 'Illustration & Graphic Design',
+    category: 'design',
     img: editorial,
     id: 'editorial',
-    text: 'Illustrations for The Dartmouth, Dartmouth College’s student newspaper and America’s oldest college newspaper',
+    text: 'Illustrations and digital graphics for The Dartmouth, Dartmouth College’s student newspaper and America’s oldest college newspaper. Created with Photoshop and Procreate.',
   },
   {
     title: 'Etch-a-Sketch',
