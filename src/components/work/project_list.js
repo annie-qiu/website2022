@@ -18,6 +18,7 @@ import timetable from '../../assets/images/thumbnails/timetable.png';
 import vitalize from '../../assets/images/thumbnails/vitalize.png';
 import quiz from '../../assets/images/thumbnails/quiz.png';
 import aapihm from '../../assets/images/thumbnails/aapihm.png';
+import japanese from '../../assets/images/thumbnails/japanese.png';
 
 const ProjectList = [
   {
@@ -175,6 +176,14 @@ const ProjectList = [
     img: aapihm,
     id: 'aapihm',
     text: 'Dartmouth’s Office of Pluralism and Leadership commissioned me to design a logo for [Asian American Pacific Islander Heritage Month (AAPIHM)](https://students.dartmouth.edu/opal/community-leadership/heritage-history-celebrations/asian-american-pacific-islander-heritage-month-1) 2021 and 2022. I used Figma to design a versatile, meaningful, and engaging logo for the themes Constellations and Elements.',
+  },
+  {
+    title: 'Generating Japanese Prints with AI',
+    description: 'Neural Networks',
+    category: 'code',
+    img: japanese,
+    id: 'japanese',
+    text: 'I used CycleGAN to create a neural network model that transfers the style of Ukiyo-e Japanese prints to photos of nature and cityscapes.\n \n[Read about the process ↗](https://medium.com/@winnzerrs/style-transfer-of-japanese-prints-with-cyclegan-2f3fee4bd264)',
   },
 ];
 

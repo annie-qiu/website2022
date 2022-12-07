@@ -42,6 +42,7 @@ function Project(props) {
   const vitalize = importAll(require.context('../../assets/images/projects/vitalize', false, /\.(png|jpe?g|svg|gif)$/));
   const quiz = importAll(require.context('../../assets/images/projects/quiz', false, /\.(png|jpe?g|svg|gif)$/));
   const aapihm = importAll(require.context('../../assets/images/projects/aapihm', false, /\.(png|jpe?g|svg|gif)$/));
+  const japanese = importAll(require.context('../../assets/images/projects/japanese', false, /\.(png|jpe?g|svg|gif)$/));
 
   let images = [];
 
@@ -102,6 +103,9 @@ function Project(props) {
       break;
     case 'aapihm':
       images = aapihm;
+      break;
+    case 'japanese':
+      images = japanese;
       break;
     default:
       break;
