@@ -26,13 +26,13 @@ const About = () => {
                 From painting to coding scripts and designing mobile applications, I love to use problem solving and visual analysis to create delightful, impactful, and humane creations.
               </p>
               <p>
-                I&apos;m from Shanghai, China (my favorite place in the world), have also lived in upstate NY and Singapore, studied abroad in Copenhagen, and currently go to school in Hanover, NH.
+                I&apos;m from Shanghai, China (my favorite place in the world), have lived in upstate NY and Singapore, studied abroad in Copenhagen, and currently go to school in Hanover, NH.
                 I&apos;m also a campus tour guide and a lover of second-hand fashion and fresh coconuts 🥥.
               </p>
               <div>
                 <p className="section"> Experience</p>
                 <ul className="list">
-                  <li>Incoming Software Engineer Intern @ <a href="databricks.com">Databricks</a></li>
+                  <li>Incoming Software Engineer Intern @ <a href="databricks.com">Databricks</a> 🧱</li>
                   <li>Design Intern @ <a href="https://www.composite.global/">Composite</a></li>
                   <li>Developer, Designer, Mentor, and Education Chair @ <a href="http://dali.dartmouth.edu/">DALI Lab</a></li>
                   <li>Teaching Asstant for Object-Oriented Programming and UI/UX Design</li>
@@ -91,7 +91,7 @@ const About = () => {
               <li>Painting I*</li>
               <li>Painting II</li>
               <li>Furniture Design</li>
-              <li>Printmaking I</li>   
+              <li>Printmaking I</li>
             </ul>
           </div>
           <br />
