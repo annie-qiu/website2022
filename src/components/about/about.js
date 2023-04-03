@@ -19,20 +19,22 @@ const About = () => {
           <Flex gridGap={10} flexDir={['column', 'column', 'row']}>
             <Flex gridGap={4} flexDir="column" w={['100%', '100%', '65%']}>
               <p>
-                I&apos;m Annie, a &apos;24 at Dartmouth College studying Computer Science and Studio Art.
+                I&apos;m Annie, a &apos;24 at Dartmouth College studying Computer Science, Studio Art, and Digital Art.
               </p>
               <p>
                 As a visual artist, designer, and computer science student, my passions lie in the intersection of design and technology.
                 From painting to coding scripts and designing mobile applications, I love to use problem solving and visual analysis to create delightful, impactful, and humane creations.
               </p>
               <p>
-                I&apos;m from Shanghai, China (my favorite place in the world) but have also lived in upstate NY, Singapore, and Hanover, NH, and I&apos;m currently studying abroad in Copenhagen.
+                I&apos;m from Shanghai, China (my favorite place in the world), have also lived in upstate NY and Singapore, studied abroad in Copenhagen, and currently go to school in Hanover, NH.
                 I&apos;m also a campus tour guide and a lover of second-hand fashion and fresh coconuts 🥥.
               </p>
               <div>
                 <p className="section"> Experience</p>
                 <ul className="list">
-                  <li>Software Developer and Product Designer @ <a href="http://dali.dartmouth.edu/">DALI Lab</a></li>
+                  <li>Incoming Software Engineer Intern @ <a href="databricks.com">Databricks</a></li>
+                  <li>Design Intern @ <a href="https://www.composite.global/">Composite</a></li>
+                  <li>Developer, Designer, Mentor, and Education Chair @ <a href="http://dali.dartmouth.edu/">DALI Lab</a></li>
                   <li>Teaching Asstant for Object-Oriented Programming and UI/UX Design</li>
                   <li>CS Research Assistant</li>
                   <li>Design Consultant @ Design Corps</li>
@@ -73,6 +75,7 @@ const About = () => {
               <p>Computer Science</p>
               <li>Intro to Computation and Programming*</li>
               <li>Object-Oriented Programming</li>
+              <li>Software Design & Development</li>
               <li>Discrete Math in CS</li>
               <li>Algorithms</li>
               <li>Full-Stack Web Development*</li>
@@ -88,6 +91,7 @@ const About = () => {
               <li>Painting I*</li>
               <li>Painting II</li>
               <li>Furniture Design</li>
+              <li>Printmaking I</li>   
             </ul>
           </div>
           <br />
