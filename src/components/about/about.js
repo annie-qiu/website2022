@@ -67,7 +67,7 @@ const About = () => {
               </Flex>
             </Flex>
           </Flex>
-          <div>
+          {/* <div>
             <br />
             <p className="section">Coursework</p>
             <em>* denotes a Citation of Academic Excellence</em>
@@ -93,7 +93,7 @@ const About = () => {
               <li>Furniture Design</li>
               <li>Printmaking I</li>
             </ul>
-          </div>
+          </div> */}
           <br />
           <p>This website was coded with React and Chakra UI. <a href="https://github.com/annie-qiu/website2022">Check out the code here!</a></p>
         </div>
