@@ -23,7 +23,7 @@ const About = () => {
               </p>
               <p>
                 As a visual artist, designer, and computer science student, my passions lie in the intersection of design and technology.
-                From painting to coding scripts and designing mobile applications, I love to use problem solving and visual analysis to create delightful, impactful, and humane creations.
+                From painting to coding scripts and designing mobile applications, I love to use problem-solving and visual analysis to create delightful, impactful, and humane creations.
               </p>
               <p>
                 I&apos;m from Shanghai, China (my favorite place in the world), have lived in upstate NY and Singapore, studied abroad in Copenhagen, and currently go to school in Hanover, NH.
@@ -32,10 +32,10 @@ const About = () => {
               <div>
                 <p className="section"> Experience</p>
                 <ul className="list">
-                  <li>Software Engineer Intern @ <a href="databricks.com">Databricks</a> 🧱</li>
+                  <li>Software Engineer Intern @ <a href="https://www.databricks.com">Databricks</a> 🧱</li>
                   <li>Design Intern @ <a href="https://www.composite.global/">Composite</a></li>
                   <li>Developer, Designer, Mentor, and Education Chair @ <a href="http://dali.dartmouth.edu/">DALI Lab</a></li>
-                  <li>Teaching Asstant for Object-Oriented Programming and UI/UX Design</li>
+                  <li>Teaching Assistant for Object-Oriented Programming and UI/UX Design</li>
                   <li>CS Research Assistant</li>
                   <li>Design Consultant @ Design Corps</li>
                   <li>UI/UX Designer @ Vitalize</li>
