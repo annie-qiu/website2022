@@ -32,7 +32,7 @@ const About = () => {
               <div>
                 <p className="section"> Experience</p>
                 <ul className="list">
-                  <li>Incoming Software Engineer Intern @ <a href="databricks.com">Databricks</a> 🧱</li>
+                  <li>Software Engineer Intern @ <a href="databricks.com">Databricks</a> 🧱</li>
                   <li>Design Intern @ <a href="https://www.composite.global/">Composite</a></li>
                   <li>Developer, Designer, Mentor, and Education Chair @ <a href="http://dali.dartmouth.edu/">DALI Lab</a></li>
                   <li>Teaching Asstant for Object-Oriented Programming and UI/UX Design</li>
