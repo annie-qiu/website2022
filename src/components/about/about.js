@@ -5,7 +5,7 @@ import {
   Flex, HStack, Image,
 } from '@chakra-ui/react';
 import Beige from '../../assets/images/backgrounds/beige-bg.png';
-import Me from '../../assets/images/profpic.png';
+import Me from '../../assets/images/profpic.jpg';
 import Resume from '../../assets/resume/resume2.pdf';
 import './about.scss';
 
